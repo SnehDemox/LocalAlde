@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Page not found</title>
+  <script type="text/javascript">
+    window.isErrorPage = true;
+    window.errorCode = '404';
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Page not found">
+  <meta http-equiv='cache-control' content='no-cache'>
+  <meta http-equiv='expires' content='0'>
+  <meta http-equiv='pragma' content='no-cache'>
+  <script src="/scripts/scripts.js" type="module" crossorigin="use-credentials"></script>
+  <script type="module">
+    import { sampleRUM } from '/scripts/aem.js';
+    const head = document.querySelector('title');
+    head.innerText = 'Error 404 - Page not found | Aldevron';
+  </script>
+  <link rel="stylesheet" href="/styles/Typo.css"/>
+  <link rel="stylesheet" href="/styles/template.css"/>
+  <link rel="stylesheet" href="/styles/responsive.css"/>
+  <link rel="stylesheet" href="/styles/gcse.css"/>
+  <link rel="stylesheet" href="/styles/styles_2020.css"/>
+  <style>
+
+    main .section {
+      padding: 0!important;
+    }
+
+    main.error .error-number {
+      width: 100%;
+    }
+
+    main.error .error-number text {
+      font-family: var(--fixed-font-family);
+    }
+    .hero {
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <header></header>
+  <main class="error">
+    <div id="content-wrapper">
+      <div class="hero bg block">
+        <div>
+          <div>
+            <picture>
+              <img alt="Not Found page" src="/icons/hero-inner-default.webp" width="2000" height="550">
+            </picture>
+          </div>
+        </div>
+        <div>
+          <div>
+            <h1 id="error-404-page-not-found">Error 404: Page not found</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="rte outer">
+          <div id="main" class="v-space-80">
+              <p>Sorry, the page you were looking for at this URL was not found.</p>
+              <p><a class="button" href="/">Continue to the homepage</a></p>
+          </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </main>
+  <footer></footer>
+</body>
+
+</html>
